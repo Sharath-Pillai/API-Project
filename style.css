@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    width: 100%;
+}
+.header-container {
+    background-color: #68a7f0;
+    box-shadow: rgb(0, 0, 0) 0px 1px 10px 0px;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around
+}
+.header-container h2 a{
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+}
+.header-container p{
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+.search-container{
+    display:flex ;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 50px;
+    padding-inline: 60px;
+}
+.search-box{
+     width: 450px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-inline: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+.search-box input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+}
+#drop-bar{
+    width: 200px;
+    height: 40px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding-left: 10px;
+}
+.countires-container{
+    max-width: 1300px;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+}
+.country-card {
+    display: inline-block;
+    width: 250px;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+    background-color: #fff;
+    height: 200px;
+}
+
+.country-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+}
