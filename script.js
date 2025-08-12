@@ -15,7 +15,7 @@ darkMode.addEventListener('click', () => {
 
 async function fetchCountries() {
     try {
-        const data = await fetch('https://pokeapi.co/api/v2/pokemon?limit=151');
+        const data = await fetch('https://pokeapi.co/api/v2/pokemon?limit=500');
         const pokemon = await data.json()
         const pokemonData = pokemon.results;
         showPokemon(pokemonData);
