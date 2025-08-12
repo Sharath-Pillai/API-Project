@@ -1,1 +1,1 @@
-# API-Project
+# Pokemon API-Project: A simple web application that uses the PokeAPI to fetch and display information about Pokemon. Users can search by Pokemon name  to view details such as type, abilities, stats, and images. The project demonstrates API fetching, JSON handling, and dynamic DOM updates in JavaScript.

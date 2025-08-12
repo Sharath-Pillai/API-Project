@@ -112,6 +112,14 @@ body {
     color: green;
     text-align: center;
 }
+.pokemon-power{
+    font-size: 16px;
+    margin-block: 10px;
+    font-weight: 600;
+    color: rgb(241, 92, 124);
+    text-align: center;
+    
+}
 .dark-mode-active{
     background-color: #333;
     color: #fff;    

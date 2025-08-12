@@ -1,7 +1,6 @@
 const darkMode = document.querySelector('.dark-mode');
 const pokemonContainer = document.querySelector('.pokemon-container');
 
-
 darkMode.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode-active');
     if (document.body.classList.contains('dark-mode-active')) {
@@ -12,7 +11,6 @@ darkMode.addEventListener('click', () => {
         darkMode.style.color = 'black';
     }
 })
-
 
 
 async function fetchCountries() {
@@ -26,7 +24,6 @@ async function fetchCountries() {
     }
 }
 fetchCountries();
-
 
 
 function showPokemon(pokemonData) {
@@ -46,7 +43,9 @@ function showPokemon(pokemonData) {
         fetchPokemonDetails(data.name)
 
         function getPokemonImage(pokemonDetails,data) {
+            // console.log(pokemonDetails);
             // console.log(pokemonDetails.sprites.front_default);
+            // console.log(pokemonDetails.types[0].type.name ,pokemonDetails.types[1].type.name);
             // console.log(data.name)
             const pokemonCard = document.createElement('a')
             pokemonCard.classList.add('pokemon-card')
@@ -55,6 +54,7 @@ function showPokemon(pokemonData) {
                 <img class="pokemon-img" src="${pokemonDetails.sprites.front_default}" alt="${data.name}">
                 <div class="details">
                     <h3 class="pokemon-name">${data.name}</h3>
+                    <p class="pokemon-power">Power: ${pokemonDetails.types.length > 1? pokemonDetails.types[0].type.name + ' & ' + pokemonDetails.types[1].type.name:pokemonDetails.types[0].type.name}</p>
                 </div>
             `
             pokemonCard.innerHTML = cardHTML
